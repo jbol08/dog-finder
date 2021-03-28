@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch } from "react-router-dom";
-import './App.css';
-import Routes from './colors/Routes'
+// import './App.css';
+import Routes from './Routes'
 import Nav from './Nav'
 import React from "react";
 import tubby from "./tubby.jpg";
@@ -9,15 +9,15 @@ import duke from "./duke.jpg";
 import whiskey from "./whiskey.jpg";
 
 
-function App() {  
+function App({dogs}) {  
   
   return (
     <div className="App">
     <BrowserRouter>
-      {/* <Nav dogs={dogs} /> */}
+      <Nav dogs={dogs} />
       
       <Switch>
-        <Routes />
+        <Routes dogs={dogs} />
       </Switch>
       
     </BrowserRouter>

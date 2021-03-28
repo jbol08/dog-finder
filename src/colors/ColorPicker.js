@@ -20,8 +20,7 @@ function ColorPicker  ({ colors })  {
 						className="ColorList-color"
 						style={{ backgroundColor: colors[color], color: 'white' }}
 						key={color}
-						to={`/colors/${color}`}
-					>
+						to={`/colors/${color}`}	>
 						<span>{color}</span>
 					</Link>
 				))}
